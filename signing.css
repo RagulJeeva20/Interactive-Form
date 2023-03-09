@@ -42,7 +42,7 @@ input
     text-align: center;
     font-size: medium;
     color:white;
-    
+    font-family: 'Metrophobic',sans-serif;
     
 }
 p{
@@ -79,8 +79,7 @@ p{
     color:rgba(255, 255, 255, 0.774);
     
 }
-.heading{
-    font-family: 'Metrophobic',sans-serif;
+
     
 }
 .inputs span i{
