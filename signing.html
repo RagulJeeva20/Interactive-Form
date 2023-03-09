@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Journey-sign in</title>
+    <link rel="stylesheet" href="signing.css">
+    <link href="https://fonts.googleapis.com/css2?family=Metrophobic&display=swap" rel="stylesheet">
+    
+</head>
+<body>
+    <div class="container">
+
+    <form class="formbox" >
+        
+        <h3 class="heading"> Sign In </h3><br>
+        <div class="inputs">
+            
+            <p>Name</p><br>
+            <input type="text"  id="name" onkeyup="validatename()" placeholder="Enter the Name">   <br> 
+            <span id="namespan"></span><br>
+        </div>
+        <div class="inputs">
+            <p>Mail</p><br>
+            <input type="text"  id="mail" onkeyup="validatemail()" placeholder="Enter the mail"><br>
+            <span id="mailspan"></span><br>
+        </div>
+        <div class="inputs">
+            <p>Date-Of-Birth</p><br>
+            <input type="date"  id="dob" onkeyup="validatedob()" ><br>
+            <span id="dobspan"></span><br>
+        </div>
+        <div class="inputs">
+            <p>phone</p><br>
+            <input type="text"  id="phno" onkeyup="validatephone()" placeholder="Enter the contact number">
+            <br>            
+            <span id="phspan"></span> <br><br> 
+        </div>    
+        <div class="inputs">       
+            <input class="button" type="button" value="Submit" onclick="return validatesub()"><br>
+            <span id="submitspan"></span>
+        </div>
+    </form>
+    </div>
+    <script src="signing.js"></script>
+</body>
+</html>
