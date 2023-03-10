@@ -73,10 +73,11 @@ function validatedob()
 }
 function validatesub()
 {
-  if (validatedob()&&validatemail()&&validatephone()&&validatename())
+  if (validatename()&&validatemail()&&validatedob()&&validatephone())
   
     {
-    location.reload();
+   
+    alert("You Signed In Successfully!");
     }
     else{
         submitspan.innerHTML="please fill all details correctly"
