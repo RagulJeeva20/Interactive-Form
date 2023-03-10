@@ -10,7 +10,7 @@ function validatename()
     let name=document.getElementById("name").value;
     
     
-    if (!name.match(/^[A-za-z]*$/))
+    if (!name.match(/^[A-Za-z]*$/))
      {
         namespan.innerHTML="Give Valid Name";
         return false;
@@ -25,7 +25,7 @@ function validatename()
 function validatephone()
 {
     let phone=document.getElementById("phno").value;
-    let exp= /^[0-9]*$/;
+    let exp=/^\d{10}$/;
     if (!phone.match(exp))
     {
         phspan.innerHTML="Invalid phno";
@@ -50,7 +50,7 @@ function validatemail()
         mailspan.innerHTML="Email is Required";
         return false;
     }
-    if (!email.match(/^[A-Z a-z0-9]*[@][a-zA-Z]*[\.][a-z]{2,4}$/)) {
+    if (!email.match(/^[A-Z a-z0-9_.]*[@][a-zA-Z]*[\.][a-z]{2,4}$/)) {
         mailspan.innerHTML="Email Invalid";
         return false;
     }
