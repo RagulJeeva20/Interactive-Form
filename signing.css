@@ -43,6 +43,8 @@ input
     text-align: center;
     font-size: medium;
     color:white;
+    font-family: 'Metrophobic',sans-serif;
+ 
     
     
 }
@@ -80,12 +82,9 @@ p{
     color:rgba(255, 255, 255, 0.774);
     
 }
-.heading{
-    font-family: 'Metrophobic',sans-serif;
-    
-}
+
 .inputs span i{
     color:seagreen;
     margin-left: 150px;
-    font-weight: bolder;;
+    font-weight: bolder;
 }
