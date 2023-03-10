@@ -20,7 +20,7 @@ function validatename()
         namespan.innerHTML="Give Any Name";
         return false;
      }
-    namespan.innerHTML='<i class="fa-solid fa-circle-check"></i>';
+    namespan.innerHTML='<i >✅</i>';
 
     return true;
 }
@@ -39,7 +39,7 @@ function validatephone()
         phspan.innerHTML="ph-no should be 10 digits";
         return false;
     }
-    phspan.innerHTML='<i class="fa-solid fa-circle-check"></i>';
+    phspan.innerHTML='<i >✅</i>';
     return true;
 
 }
@@ -51,11 +51,11 @@ function validatemail()
         mailspan.innerHTML="Email is Required";
         return false;
     }
-    if (!email.match(/^[A-Z a-z0-9_.]*[@][a-zA-Z]*[\.][a-z]{2,4}$/)) {
+    if (!email.match(/^[A-Z a-z0-9_.]+@[a-zA-Z.]+$/)) {
         mailspan.innerHTML="Email Invalid";
         return false;
     }
-    mailspan.innerHTML='<i class="fa-solid fa-circle-check"></i>';
+    mailspan.innerHTML='<i >✅</i>';
         return true;
 }
 function validatedob()
@@ -67,7 +67,7 @@ function validatedob()
         return false;
     }
     
-    dobspan.innerHTML='<i class="fa-solid fa-circle-check"></i>';
+    dobspan.innerHTML='<i >✅</i>';
     return true;
     
 }
