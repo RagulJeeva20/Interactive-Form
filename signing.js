@@ -76,7 +76,7 @@ function validatesub()
   if (validatename()&&validatemail()&&validatedob()&&validatephone())
   
     {
-   
+    location.reload();
     alert("You Signed In Successfully!");
     }
     else{
